@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Weather Service</h1>
+</div>
+
+<div class="row">
+
+  <div class="column side">
+  </div>
+  
+  <div class="column middle">
+    
+    <label for="cities">Pick a city:</label>
+
+    <select name="cities" id="city_select" onchange="CitySelectOnChange()">
+      <option value="does">Does</option>
+      <option value="not">Not</option>
+      <option value="work">Work</option>
+    </select>
+
+    <div id="weather_info" class="container">
+      <img id="weather_image" src="" class="img">
+      <div id="weather_text" class="top-left"></div>
+    </div>
+
+  </div>
+  
+  <div class="column side">
+  </div>
+
+</div>
+
+<script src="web.js"></script>
+
+</body>
+</html>
